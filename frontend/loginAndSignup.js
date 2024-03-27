@@ -3,7 +3,7 @@ const signInButton = document.getElementById('signIn');
 const container = document.getElementById('container');
 const signUpButton_mobile = document.getElementById('signUp_mobile');
 const signInButton_mobile = document.getElementById('signIn_mobile');
-const backendURL = "http://localhost:8080"
+const backendURL = "https://employee-management-ya74.onrender.com"
 
 signUpButton.addEventListener('click', () => {
 	container.classList.add("right-panel-active");
