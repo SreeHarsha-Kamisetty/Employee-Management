@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .buttons {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        button {
+            padding: 12px;
+            background-color: white;
+            border: 1px solid black;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        #addEmp {
+            background-color: #0366ee;
+            color: aliceblue;
+            border: none;
+
+        }
+
+        #head {
+            display: flex;
+            padding: 10px;
+            justify-content: space-around;
+
+        }
+
+        #container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #empdata {
+            display: flex;
+            padding: 5px;
+            justify-content: space-around;
+        }
+
+        #empdata button {
+
+            border: 1px solid black;
+            padding: 2px;
+        }
+
+
+        dialog {
+            width: 300px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            display: none;
+        }
+
+        dialog input {
+            padding: 10px;
+            margin: 10px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Employee Management Software</h1>
+    <div class="buttons">
+        <button id="addEmp"> Add Employee</button>
+        <button>Logout</button>
+    </div>
+    <div id="container">
+        <div id="head">
+            <p>First Name</p>
+            <p>Last Name</p>
+            <p>Email</p>
+            <p>Department</p>
+            <p>Salary</p>
+            <p>Actions</p>
+        </div>
+        <div id="alldata">
+            <div class="data">
+                <div id="empdata">
+                    <p>Sree Harsha</p>
+                    <p>Kamisetty</p>
+                    <p>sree@gmail.com</p>
+                    <p>Tech</p>
+                    <p>999999</p>
+                    <p><button>Edit</button>
+                        <button>Delete</button>
+                    </p>
+                </div>
+            </div>
+            
+            
+           
+        </div>
+       
+    </div>
+
+    <dialog id="myDialog">
+        <input type="text" placeholder="First Name">
+        <input type="text" placeholder="Last Name">
+        <input type="text" placeholder="Email">
+        <select name="" id="">
+            <option value="">Tech</option>
+            <option value="">Marketing</option>
+            <option value="">Operations</option>
+        </select>
+        <input type="number" placeholder="Salary">
+        <button id="create">Create</button>
+        <button id="closeDialog">Close</button>
+    </dialog>
+
+</body>
+<script src="dashboard.js"></script>
+
+</html>
